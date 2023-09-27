@@ -57,3 +57,21 @@ export const fcc = (app) => {
 		res.json({ headers: hObj });
 	});
 };
+
+const testFilter = (tests, type, n) => {
+	let out;
+	switch (type) {
+		case 'unit':
+			out = tests.filter((t) => t.context.match('Unit Tests'));
+			break;
+		case 'functional':
+			out = tests.filter((t) => t.context.match('Functional Tests') && !t.title.match('#example'));
+			break;
+		default:
+			out = tests;
+	}
+	if (n !== undefined) {
+		return out[n] || out;
+	}
+	return out;
+};
