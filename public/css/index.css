@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+#root header {
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+}
+
+
+select {
+    -webkit-appearance: listbox !important;
+}
+
+.highlight {
+    color: green;
+}
+
+#error-msg {
+    font-weight: normal;
+    color: red;
+}
