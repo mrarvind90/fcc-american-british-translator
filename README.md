@@ -32,6 +32,9 @@ A full-stack translator web app for converting American English to British Engli
     - Chai: An assertion library used in conjunction with Mocha for making test assertions.
 
 ## Features
+- Conversion between British English to American English and vice versa
+- Normalization of titles, spellings, and time units
+- Translation of specific locale-specific words to their corresponding dialect
 
 ## Running the application
 To run the express application, do follow the following steps
